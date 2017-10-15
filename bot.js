@@ -13,6 +13,15 @@ bot.startRTM((err, bot, payload) => {
   }
 })
 
-controller.hears(["Hello"], ["direct_message", "direct_mention", "mention"], (bot, message) => {
-  bot.reply(message, 'Hello there!')
-})
+controller.on('user_channel_join',function(bot,message) {
+  // message contains data sent by slack
+  // in this case:
+  // https://api.slack.com/events/channel_joined
+  //console.log("event reached for channel join");
+  bot.reply(message,"Welcome to our Group <@" + message.user + ">"); 
+});
+
+
+
+
+
