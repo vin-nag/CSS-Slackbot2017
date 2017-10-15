@@ -4,7 +4,7 @@ const Botkit = require('botkit')
 const controller = Botkit.slackbot();
 
 const bot = controller.spawn({
-  token: config.TOKEN
+  token: TOKEN
 })
 
 bot.startRTM((err, bot, payload) => {
