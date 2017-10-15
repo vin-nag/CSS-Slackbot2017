@@ -1,5 +1,5 @@
 const Botkit = require('botkit')
-const config = require('./config')
+//const config = require('./config')
 
 const controller = Botkit.slackbot();
 
