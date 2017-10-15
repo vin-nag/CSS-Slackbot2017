@@ -4,7 +4,7 @@
   "description": "A slackbot developed by students at Memorial University of Newfoundland and the University's Computer Science Society.",
   "main": "main.js",
   "scripts": {
-    "test": "node main.js"
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
